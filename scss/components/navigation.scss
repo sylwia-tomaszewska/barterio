@@ -1,3 +1,11 @@
-.navbar {
-  background-color: $brand-color;
+.navbar-collapse {
+  margin: 0 -1rem;
+  // background-color: lighten($color-brand, 50%);
+}
+.search-bttn {
+  background-color: #2c2c2c;
+  border: 1px solid #2c2c2c;
+  img {
+    width: 80%;
+  }
 }

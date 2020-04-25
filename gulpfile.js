@@ -9,8 +9,9 @@ function style() {
     .pipe(sourcemaps.init())
     .pipe(
       sass({
-        outputStyle: "compressed"
-      }).on("error", sass.logError))
+        outputStyle: "compressed",
+      }).on("error", sass.logError)
+    )
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("css"))
     .pipe(browserSync.stream());
@@ -24,6 +25,7 @@ function watch() {
   });
   gulp.watch("scss/**/*.scss", style);
   gulp.watch("*.html").on("change", browserSync.reload);
+  gulp.watch("kategorie/**/*.html").on("change", browserSync.reload);
   gulp.watch("js/**/*.js").on("change", browserSync.reload);
 }
 

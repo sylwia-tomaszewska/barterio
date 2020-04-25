@@ -23,6 +23,6 @@
     "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
-    "bulma": "^0.8.2"
+    "bootstrap": "^4.4.1"
   }
 }

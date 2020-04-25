@@ -1,3 +1,23 @@
 body {
-  display: flex;
+  font-family: "Inter", sans-serif;
+}
+.bg-brand {
+  background: $color-brand;
+}
+.r-0 {
+  right: 0;
+}
+.hero {
+  h1 {
+    font-weight: 800;
+  }
+  .btn-lg {
+    padding: 0.5rem 2rem;
+    background-color: $color-secondary;
+    border-radius: 2rem;
+  }
+}
+a.text-light:focus,
+a.text-light:hover {
+  color: rgba(#fff, 0.75) !important;
 }

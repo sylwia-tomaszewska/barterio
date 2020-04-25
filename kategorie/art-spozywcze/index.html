@@ -10,25 +10,23 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-brand">
-        <a class="navbar-brand" href="#"><img src="img/Barterio.svg" alt="Barterio logo"></a>
+        <a class="navbar-brand" href="/"><img src="/img/Barterio.svg" alt="Barterio logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav px-3">
-                <a class="align-items-center order-lg-4 mr-2 ml-4 d-none d-lg-flex" href="/login"><img
-                        src="img/icons/login.svg" alt="login"></a>
                 <form class="form-inline my-2 my-lg-0 order-lg-3 position-relative">
-                    <input class="form-control mr-sm-2 d-flex w-100" type="search" placeholder="Wyszukaj"
-                        aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Wyszukaj" aria-label="Search">
                     <button class="btn btn-outline-success my-sm-0 position-absolute r-0 search-bttn" type="submit"><img
-                            src="img/icons/search.svg" alt="wyszukaj"></button>
+                            src="/img/icons/search.svg" alt="wyszukaj"></button>
                 </form>
                 <li class="nav-item dropdown order-lg-1">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
@@ -36,7 +34,8 @@
                         Wybierz kategorię
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="kategorie/art-spozywcze/index.html">Art. spożywcze</a>
+                        <a class="dropdown-item active" href="#">Art. spożywcze <span
+                                class="sr-only">(current)</span></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Odzież i obuwie</a>
                         <div class="dropdown-divider"></div>
@@ -74,61 +73,34 @@
             </ul>
         </div>
     </nav>
-    <section class="hero">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/"><img class="align-baseline" src="/img/icons/home.svg" alt=""></a>
+            </li>
+            <li class="breadcrumb-item active">Kategorie</li>
+            <li class="breadcrumb-item active" aria-current="page">Art. spożywcze</li>
+        </ol>
+    </nav>
+    </div>
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1 class="my-4 my-md-5 text-center">
-                        Sprzedawaj<br>
-                        Wymieniaj<br>
-                        Zarabiaj
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="text-center">
-                        <img src="img/hero.svg" alt="sprzedawaj online">
+                <div class="col col-lg-6 mx-auto">
+                    <div class="card my-4 my-md-5">
+                        <img src="/img/flower-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Czerwone róże</strong></h5>
+                            <p class="card-text">Cena: 5 zł/szt.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="card-link"><img class="mr-1" src="/img/icons/pin.svg" alt="">
+                                Katowice</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mb-4 mb-md-5">
-                <div class="col col-md-8 text-center">
-                    <h5 class="my-4">
-                        Dołącz do ogólnopolskiej platfromy wymiany towarów i&nbsp;usług
-                    </h5>
-                    <button type="button" class="btn btn-lg text-light">Rozpocznij</button>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
