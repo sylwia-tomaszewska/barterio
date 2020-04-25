@@ -1,11 +1,10 @@
 {
-  "name": "app",
+  "name": "barterio-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server --config webpack.config.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,20 +17,9 @@
   },
   "homepage": "https://github.com/BlueMan2017/barterio#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "css-loader": "^3.5.3",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.2.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "postcss-loader": "^3.0.0",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }
