@@ -15,27 +15,28 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-brand">
-        <a class="navbar-brand" href="/"><img src="/img/Barterio.svg" alt="Barterio logo"></a>
+        <a class="navbar-brand" href="#"><img src="img/Barterio.svg" alt="Barterio logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav px-3">
+                <a class="align-items-center order-lg-4 mr-2 ml-4 d-none d-lg-flex" href="/login"><img
+                        src="img/icons/login.svg" alt="login"></a>
                 <form class="form-inline my-2 my-lg-0 order-lg-3 position-relative">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Wyszukaj" aria-label="Search">
+                    <input class="form-control mr-sm-2 d-flex w-100" type="search" placeholder="Wyszukaj"
+                        aria-label="Search">
                     <button class="btn btn-outline-success my-sm-0 position-absolute r-0 search-bttn" type="submit"><img
-                            src="/img/icons/search.svg" alt="wyszukaj"></button>
+                            src="img/icons/search.svg" alt="wyszukaj"></button>
                 </form>
-                <li class="nav-item dropdown order-lg-1">
+                <li class="nav-item dropdown px-3 order-lg-1">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Wybierz kategorię
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item active" href="#">Art. spożywcze <span
-                                class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="#">Art. spożywcze</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Odzież i obuwie</a>
                         <div class="dropdown-divider"></div>
@@ -50,7 +51,7 @@
                         <a class="dropdown-item" href="#">Inne</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown order-lg-2">
+                <li class="nav-item dropdown px-3 my-2 my-lg-0 mx-lg-2 order-lg-2">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Wybierz miasto
@@ -73,14 +74,62 @@
             </ul>
         </div>
     </nav>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/"><img class="align-baseline" src="/img/icons/home.svg" alt=""></a>
-            </li>
-            <li class="breadcrumb-item active">Kategorie</li>
-            <li class="breadcrumb-item active" aria-current="page">Art. spożywcze</li>
-        </ol>
-    </nav>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-brand-45 p-4">
+                <div class="container d-flex flex-column mb-4 text-center align-items-center">
+                    <h5><strong>Kategoria</strong></h5>
+                    <div class="col col-lg-8" role="group">
+                        <button type="button"
+                            class="col col-lg-auto btn btn-light align-items-center text-left text-lg-center m-1"><img
+                                src="/img/icons/spozywcze.svg" alt="art. spożywcze"
+                                style="width: 32px;margin-right: 0.5rem;">Art.
+                            spożywcze</button>
+                        <button type="button"
+                            class="col col-lg-auto btn btn-light align-items-center text-left text-lg-center m-1"><img
+                                src="/img/icons/odziez.svg" alt="art. spożywcze"
+                                style="width: 32px;margin-right: 0.5rem;">Odzież i obuwie</button>
+                        <button type="button"
+                            class="col col-lg-auto btn btn-light align-items-center text-left text-lg-center m-1"><img
+                                src="/img/icons/zdrowie.svg" alt="art. spożywcze"
+                                style="width: 32px;margin-right: 0.5rem;">Zdrowie i uroda</button>
+                        <button type="button"
+                            class="col col-lg-auto btn btn-light align-items-center text-left text-lg-center m-1"><img
+                                src="/img/icons/ogrod.svg" alt="art. spożywcze"
+                                style="width: 32px;margin-right: 0.5rem;">Ogrodnictwo</button>
+                        <button type="button"
+                            class="col col-lg-auto btn btn-light align-items-center text-left text-lg-center m-1"><img
+                                src="/img/icons/edukacja.svg" alt="art. spożywcze"
+                                style="width: 32px;margin-right: 0.5rem;">Edukacja</button>
+                        <button type="button"
+                            class="col col-lg-auto btn btn-light align-items-center text-left text-lg-center m-1"><img
+                                src="/img/icons/uslugi.svg" alt="art. spożywcze"
+                                style="width: 32px;margin-right: 0.5rem;">Usługi</button>
+                        <button type="button"
+                            class="col col-lg-auto btn btn-light align-items-center text-left text-lg-center m-1"><img
+                                src="/img/icons/inne.svg" alt="art. spożywcze"
+                                style="width: 32px;margin-right: 0.5rem;">Inne</button>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column text-center align-items-center">
+                    <h5><strong>Miasto</strong></h5>
+                    <div class="col col-lg-8" role="group">
+                        <button type="button" class="btn bg-brand text-light m-1">Warszawa</button>
+                        <button type="button" class="btn bg-brand text-light m-1">Kraków</button>
+                        <button type="button" class="btn bg-brand text-light m-1">Wrocław</button>
+                        <button type="button" class="btn bg-brand text-light m-1">Gdańsk</button>
+                        <button type="button" class="btn bg-brand text-light m-1">Poznań</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-brand-40 justify-content-end">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/img/icons/filter.svg">
+            </button>
+        </nav>
     </div>
     <section>
         <div class="container">
@@ -88,13 +137,21 @@
                 <div class="col col-lg-6 mx-auto">
                     <div class="card my-4 my-md-5">
                         <img src="/img/flower-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Czerwone róże</strong></h5>
-                            <p class="card-text">Cena: 5 zł/szt.</p>
+                        <div class="card-body pb-0">
+                            <h5><strong>Czerwone róże</strong></h5>
+                            <small class="text-muted">Opublikowano: 26/04/2020</small>
                         </div>
-                        <div class="card-body">
-                            <a href="#" class="card-link"><img class="mr-1" src="/img/icons/pin.svg" alt="">
-                                Katowice</a>
+                        <div class="card-body py-2 pt-0">
+                            <small class="card-text py-1 px-2 text-light rounded bg-primary">Odzież i obuwie</small>
+                            <small class="card-text py-1 px-2 text-light rounded bg-brand">wymiana +
+                                gotówka</small></div>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body pt-2">
+                            <p class="card-text">Nazwa Użytkowika</p>
+                        </div>
+                        <div class="card-header d-flex justify-content-between" style="border-bottom: none;">
+                            <p class="mb-0">Szacowana wartość:</p>
+                            <h5 class="card-title text-right mb-0"> 300 zł/szt.</h5>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ function style() {
     .pipe(sourcemaps.init())
     .pipe(
       sass({
-        outputStyle: "compressed",
+        outputStyle: "expanded",
       }).on("error", sass.logError)
     )
     .pipe(sourcemaps.write())

@@ -4,6 +4,12 @@ body {
 .bg-brand {
   background: $color-brand;
 }
+.bg-brand-45 {
+  background: lighten($color-brand, 45%);
+}
+.bg-brand-40 {
+  background: lighten($color-brand, 40%);
+}
 .r-0 {
   right: 0;
 }
