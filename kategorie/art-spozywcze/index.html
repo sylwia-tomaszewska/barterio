@@ -132,11 +132,181 @@
         </nav>
     </div>
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col col-lg-6 mx-auto">
-                    <div class="card my-4 my-md-5">
-                        <img src="/img/flower-1.png" class="card-img-top" alt="...">
+        <div class="container my-4 my-md-5">
+            <div class="grid-wrapper">
+                <div class="grid-item">
+                    <div class="card">
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="8000">
+                                    <div class="d-block bg-img"
+                                        style="background-image: url({{ offer.images.all.0.image.url }});">
+                                    </div>
+                                </div>
+                                {% for image in offer.images.all %}
+                                {% if forloop.counter > 1 %}
+                                <div class="carousel-item" data-interval="8000">
+                                    <div class="d-block bg-img" style="background-image: url({{ image.image.url }});">
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div class="card-body pb-0">
+                            <h5><strong>Czerwone róże</strong></h5>
+                            <small class="text-muted">Opublikowano: 26/04/2020</small>
+                        </div>
+                        <div class="card-body py-2 pt-0">
+                            <small class="card-text py-1 px-2 text-light rounded bg-primary">Odzież i obuwie</small>
+                            <small class="card-text py-1 px-2 text-light rounded bg-brand">wymiana +
+                                gotówka</small></div>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body pt-2">
+                            <p class="card-text">Nazwa Użytkowika</p>
+                        </div>
+                        <div class="card-header d-flex justify-content-between" style="border-bottom: none;">
+                            <p class="mb-0">Szacowana wartość:</p>
+                            <h5 class="card-title text-right mb-0"> 300 zł/szt.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card ">
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="8000">
+                                    <div class="d-block w-100 bg-img"
+                                        style="background-image: url({{ offer.images.all.0.image.url }});">
+                                    </div>
+                                </div>
+                                {% for image in offer.images.all %}
+                                {% if forloop.counter > 1 %}
+                                <div class="carousel-item" data-interval="8000">
+                                    <div class="d-block w-100 bg-img"
+                                        style="background-image: url({{ image.image.url }});">
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div class="card-body pb-0">
+                            <h5><strong>Czerwone róże</strong></h5>
+                            <small class="text-muted">Opublikowano: 26/04/2020</small>
+                        </div>
+                        <div class="card-body py-2 pt-0">
+                            <small class="card-text py-1 px-2 text-light rounded bg-primary">Odzież i obuwie</small>
+                            <small class="card-text py-1 px-2 text-light rounded bg-brand">wymiana +
+                                gotówka</small></div>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body pt-2">
+                            <p class="card-text">Nazwa Użytkowika</p>
+                        </div>
+                        <div class="card-header d-flex justify-content-between" style="border-bottom: none;">
+                            <p class="mb-0">Szacowana wartość:</p>
+                            <h5 class="card-title text-right mb-0"> 300 zł/szt.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card">
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="8000">
+                                    <div class="d-block w-100 bg-img"
+                                        style="background-image: url({{ offer.images.all.0.image.url }});">
+                                    </div>
+                                </div>
+                                {% for image in offer.images.all %}
+                                {% if forloop.counter > 1 %}
+                                <div class="carousel-item" data-interval="8000">
+                                    <div class="d-block w-100 bg-img"
+                                        style="background-image: url({{ image.image.url }});">
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div class="card-body pb-0">
+                            <h5><strong>Czerwone róże</strong></h5>
+                            <small class="text-muted">Opublikowano: 26/04/2020</small>
+                        </div>
+                        <div class="card-body py-2 pt-0">
+                            <small class="card-text py-1 px-2 text-light rounded bg-primary">Odzież i obuwie</small>
+                            <small class="card-text py-1 px-2 text-light rounded bg-brand">wymiana +
+                                gotówka</small></div>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body pt-2">
+                            <p class="card-text">Nazwa Użytkowika</p>
+                        </div>
+                        <div class="card-header d-flex justify-content-between" style="border-bottom: none;">
+                            <p class="mb-0">Szacowana wartość:</p>
+                            <h5 class="card-title text-right mb-0"> 300 zł/szt.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card ">
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="8000">
+                                    <div class="d-block w-100 bg-img"
+                                        style="background-image: url({{ offer.images.all.0.image.url }});">
+                                    </div>
+                                </div>
+                                {% for image in offer.images.all %}
+                                {% if forloop.counter > 1 %}
+                                <div class="carousel-item" data-interval="8000">
+                                    <div class="d-block w-100 bg-img"
+                                        style="background-image: url({{ image.image.url }});">
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                         <div class="card-body pb-0">
                             <h5><strong>Czerwone róże</strong></h5>
                             <small class="text-muted">Opublikowano: 26/04/2020</small>

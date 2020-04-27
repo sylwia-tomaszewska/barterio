@@ -27,3 +27,10 @@ a.text-light:focus,
 a.text-light:hover {
   color: rgba(#fff, 0.75) !important;
 }
+.grid-wrapper {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 350px));
+  grid-template-rows: auto;
+}
