@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/BlueMan2017/barterio#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
